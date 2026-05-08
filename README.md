@@ -32,7 +32,7 @@ In this project, we observe various network traffic to and from Azure Virtual Ma
 <h2>Actions and Observations</h2>
 
 <p>
-<img width="2560" height="1392" alt="LAB1-VMDEPLOY" src="https://github.com/user-attachments/assets/f0b1ca93-f86b-447b-a1dd-1501806c58a0" />
+<img width="2560" height="1280" alt="image" src="https://github.com/user-attachments/assets/b19b1588-2b22-486c-8851-26063bf13920" />
 </p>
 <p>
 
@@ -42,7 +42,7 @@ In this project, we observe various network traffic to and from Azure Virtual Ma
 <br />
 
 <p>
-<img width="2560" height="1440" alt="LAB1-ICMPTRAFFIC" src="https://github.com/user-attachments/assets/f593a7b7-cc79-4768-8743-10acc8dde3b4" />
+<img width="2560" height="1327" alt="image" src="https://github.com/user-attachments/assets/3a86af82-2717-463a-a195-e133808e01cb" />
 </p>
 <p>
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
@@ -50,7 +50,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 <br />
 
 <p>
-<img width="2560" height="1392" alt="LAB1-LXFIREWALLRULE" src="https://github.com/user-attachments/assets/040a1453-8c19-41c1-a9aa-4ec2ab889900" />
+<img width="2560" height="1280" alt="image" src="https://github.com/user-attachments/assets/8f3d6b70-8bb8-40d3-85f6-3ac6527f0be9" />
 </p>
 <p>
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
