@@ -79,7 +79,7 @@ In this project, we observe various network traffic to and from Azure Virtual Ma
 </p>
 <p>
 
-- Reconnected to Windows Virtual Machine and initiated packet capture within Wireshark, filtering for SSH traffic. From Powershell, established an SSH connection to the Ubuntu Linux Virtual Machine using its private IP address (ssh labuser@10.0.0.5), initiating secure remote shell access. Executed basic Linux commands within the session and observed encrypted SSH packet exchanges in Wireshark. 
+- Reconnected to Windows Virtual Machine and initiated packet capture within Wireshark, filtering for SSH traffic. From Powershell, established an SSH connection to the Ubuntu Linux Virtual Machine using its private IP address (ssh labuser@10.0.0.5), initiating secure remote shell access. Executed basic Linux commands within the session and observed encrypted SSH packet exchanges in Wireshark. SSH uses TCP port 22 and allows remote connections to Linux systems and less commonly Windows environments. 
 
 </p>
 <br />
@@ -89,7 +89,7 @@ In this project, we observe various network traffic to and from Azure Virtual Ma
 </p>
 <p>
 
-- Configured Wireshark to filter for DHCP traffic to analyze IP address assignment behavior. Using Powershell as administrator, ran the "ipconfig /renew" to request a new IP address from the DHCP server. Observed DHCP reqest and response packets in Wireshark, confirming lease renewal and communication between the Windows VM and the DHCP server.
+- Configured Wireshark to filter for DHCP traffic to analyze IP address assignment behavior. Using Powershell as administrator, ran the "ipconfig /renew" to request a new IP address from the DHCP server. Observed DHCP reqest and response packets in Wireshark, confirming lease renewal and communication between the Windows VM and the DHCP server. DHCP uses port 67 on the server side and port 68 on the client side, and allows for automatic IP configurations.
 
 </p>
 <br />
@@ -99,7 +99,7 @@ In this project, we observe various network traffic to and from Azure Virtual Ma
 </p>
 <p>
 
-- Configured Wireshark to filter for DNS traffic to analyze domain name resolution behavior. From Powershell, ran the "nslookup" command with google.com and apple.com after it to observe their respective IP addresses. Observed DNS query and query response packets within Wireshark , confirming successful name resolution and visibility of DNS communication between the Windows VM and the DNS servers.
+- Configured Wireshark to filter for DNS traffic to analyze domain name resolution behavior. From Powershell, ran the "nslookup" command with google.com and apple.com after it to observe their respective IP addresses. Observed DNS query and query response packets within Wireshark , confirming successful name resolution and visibility of DNS communication between the Windows VM and the DNS servers. DNS uses port UDP/TCP port 53 and translates domain names into IP addresses so devices can locate and communicate with each other over a network.
 
 </p>
 <br />
