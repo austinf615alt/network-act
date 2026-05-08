@@ -2,8 +2,8 @@
 <img src="https://i.imgur.com/Ua7udoS.png" alt="Traffic Examination"/>
 </p>
 
-<h1>Configuring Firewall and Inspecting Network Traffic Between Azure Virtual Machines</h1>
-In this project, we observe various network traffic to and from Azure Virtual Machines with Wireshark as well as experiment with Network Security Groups. <br />
+<h1>Configuring Network Security Groups and Inspecting Network Traffic Between Azure Virtual Machines</h1>
+In this project, we observe various network traffic to and from Azure Virtual Machines with Wireshark as well as experiment with Network Security Groups (NSG). <br />
 
 <h2>Environments and Technologies Used</h2>
 
@@ -22,8 +22,8 @@ In this project, we observe various network traffic to and from Azure Virtual Ma
 
 - Step 1: Created Virtual Machines within Azure
 - Step 2: Observed ICMP Traffic within Wireshark
-- Step 3: Configured Linux Firewall Rule
-- Step 4: Observed ICMP Traffic with Firewall Rule enabled
+- Step 3: Configured Linux Network Security Group Rule
+- Step 4: Observed ICMP Traffic with NSG Rule enabled
 - Step 5: Observed SSH Traffic
 - Step 6: Observed DHCP Traffic
 - Step 7: Observed DNS Traffic
