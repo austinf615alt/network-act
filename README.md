@@ -35,7 +35,9 @@ In this project, we observe various network traffic to and from Azure Virtual Ma
 <img width="2560" height="1392" alt="LAB1-VMDEPLOY" src="https://github.com/user-attachments/assets/f0b1ca93-f86b-447b-a1dd-1501806c58a0" />
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+
+- In Azure, created a resource group wherein a Windows Server 2025 Virtual Machine and an Ubuntu Linux Virtual Machine were configured and deployed, taking care to make sure both virtual machines were on the same virtual network and subnet to enable internal communication between systems.
+
 </p>
 <br />
 
