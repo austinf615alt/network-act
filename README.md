@@ -45,7 +45,11 @@ In this project, we observe various network traffic to and from Azure Virtual Ma
 <img width="2560" height="1327" alt="image" src="https://github.com/user-attachments/assets/3a86af82-2717-463a-a195-e133808e01cb" />
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+
+- Connected to the Windows 10 virtual machine using Remote Desktop and installed Wireshark to analyze network traffic. Configured and filtered Wireshark to only see ICMP traffic.
+
+- Using the private IP address of the Ubuntu Linux Virtual Machine, performed ICMP ping tests within Powershell to verify internal network connectivity, observing the request and reply packets within Wireshark. Note that 10.0.0.5 is the private IP address of the Ubuntu Linux Virtual Machine and 10.0.0.4 is the source of the requests which is the Windows Virtual Machine. Also pinged www.google.com within Powershell to observe the ICMP traffic and verify internet connectivity.
+
 </p>
 <br />
 
@@ -53,7 +57,9 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 <img width="2560" height="1280" alt="image" src="https://github.com/user-attachments/assets/8f3d6b70-8bb8-40d3-85f6-3ac6527f0be9" />
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+
+- Ran a non-stop ping from Windows Virtual Machine to Ubuntu Linux Virtual Machine using Powershell and the command "ping 10.0.0.5 -t" to monitor real time connectivity within the network. Configured and modified the Network Security Group within Azure from the Ubunut Linux Virtual Machine to block inbound ICMP traffic, resulting in failed ping responses observed in both Powershell and Wireshark.
+
 </p>
 <br />
 
