@@ -48,7 +48,7 @@ In this project, we observe various network traffic to and from Azure Virtual Ma
 
 - Connected to the Windows 10 virtual machine using Remote Desktop and installed Wireshark to analyze network traffic. Configured and filtered Wireshark to only see ICMP traffic.
 
-- Using the private IP address of the Ubuntu Linux Virtual Machine, performed ICMP ping tests within Powershell to verify internal network connectivity, observing the request and reply packets within Wireshark. Note that 10.0.0.5 is the private IP address of the Ubuntu Linux Virtual Machine and 10.0.0.4 is the source of the requests which is the Windows Virtual Machine. Also pinged www.google.com within Powershell to observe the ICMP traffic and verify internet connectivity.
+- Using the private IP address of the Ubuntu Linux Virtual Machine, performed ICMP ping tests within Powershell to verify internal network connectivity, observing the request and reply packets within Wireshark. Note that 10.0.0.5 is the private IP address of the Ubuntu Linux Virtual Machine and 10.0.0.4 is the source of the requests which is the Windows Virtual Machine. Also pinged "www.google.com" within Powershell to observe the ICMP traffic and verify internet connectivity.
 
 </p>
 <br />
@@ -67,7 +67,10 @@ In this project, we observe various network traffic to and from Azure Virtual Ma
 <img width="1856" height="993" alt="LAB1-LXFIREWALLRULE2" src="https://github.com/user-attachments/assets/53ee801c-aa94-4d1f-a44e-dc65564e7d30" />
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+
+- Note that the requests timed out within Powershell and no response found within Wireshark due to the Network Security Group configuration.
+- Re-enabled inbound ICMP traffic on the Network Security Group for the Ubuntu Linux Virtual Machine, observing that the Ping and Wireshark activity starts again.
+
 </p>
 <br />
 
@@ -75,7 +78,9 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 <img width="1856" height="993" alt="LAB1-SSH1" src="https://github.com/user-attachments/assets/1512ec24-3325-4fa8-ae37-4cc776cafa41" />
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+
+- Reconnected to Windows Virtual Machine and initiated packet capture within Wireshark, filtering for SSH traffic. From Powershell, established an SSH connection to the Ubuntu Linux Virtual Machine using its private IP address (ssh labuser@10.0.0.5), initiating secure remote shell access. Executed basic Linux commands within the session and observed encrypted SSH packet exchanges in Wireshark. 
+
 </p>
 <br />
 
@@ -83,7 +88,9 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 <img width="1856" height="993" alt="LAB1-DHCPTRAFFIC" src="https://github.com/user-attachments/assets/bdcd6074-c261-4cb0-9a76-d79d2780664b" />
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+
+- Configured Wireshark to filter for DHCP traffic to analyze IP address assignment behavior. Using Powershell as administrator, ran the "ipconfig /renew" to request a new IP address from the DHCP server. Observed DHCP reqest and response packets in Wireshark, confirming lease renewal and communication between the Windows VM and the DHCP server.
+
 </p>
 <br />
 
@@ -91,7 +98,9 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 <img width="1856" height="993" alt="LAB1-DNSTRAFFIC" src="https://github.com/user-attachments/assets/02a91bf9-30b9-4f5a-aca0-0499f2502a93" />
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+
+- Configured Wireshark to filter for DNS traffic to analyze domain name resolution behavior. From Powershell, ran the "nslookup" command with google.com and apple.com after it to observe their respective IP addresses. Observed DNS query and query response packets within Wireshark , confirming successful name resolution and visibility of DNS communication between the Windows VM and the DNS servers.
+
 </p>
 <br />
 
@@ -99,6 +108,8 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 <img width="1856" height="993" alt="LAB1-RDPTRAFFIC" src="https://github.com/user-attachments/assets/beaef697-8fa3-4dd6-9361-b77ea5da2b86" />
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+
+- Configured Wireshark to filter for RDP traffic typing in "tcp.port == 3389" in the filter bar. Observed continuous and high traffic between host PC and Windows VM due to the Remote Desktop Protocol maintaining the active connection. RDP Port 3389 transmits a live feed including inputs, visuals, and session data between the host computer and the remote computer.
+
 </p>
 <br />
